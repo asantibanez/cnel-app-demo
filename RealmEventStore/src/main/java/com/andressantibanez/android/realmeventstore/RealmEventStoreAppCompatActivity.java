@@ -59,8 +59,9 @@ public class RealmEventStoreAppCompatActivity extends AppCompatActivity implemen
     private synchronized void startListeningForEvents() {
         Log.e(REALM_EVENT_STORE_TAG, "Start Listening");
 
-        mRealm = RealmEventStore.setListener(this);
         mListeningToEvents = true;
+
+        mRealm = RealmEventStore.setListener(this);
 
         if(RealmEventStore.getPendingEventsCount(mRealmActivityId) > 0)
             processPendingEvents();
@@ -69,8 +70,9 @@ public class RealmEventStoreAppCompatActivity extends AppCompatActivity implemen
     private synchronized void stopListeningForEvents() {
         Log.e(REALM_EVENT_STORE_TAG, "Stop Listening");
 
-        RealmEventStore.removeListener(mRealm, this);
         mListeningToEvents = false;
+
+        RealmEventStore.removeListener(mRealm, this);
     }
 
     private synchronized void processPendingEvents() {

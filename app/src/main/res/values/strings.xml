@@ -1,7 +1,8 @@
 <resources>
-    <string name="app_name">CnelApp</string>
+    <string name="app_name">Cnel App</string>
     <string name="hello_world">Hello world!</string>
-    <string name="action_settings">Settings</string>
-    <string name="title_activity_electricity_meter_search">ElectricityMeterSearchActivity</string>
-    <string name="title_activity_check_payments">CheckPaymentsActivity</string>
+    <string name="action_settings">Ajustes</string>
+    <string name="title_activity_electricity_meter_search">Búsqueda de Suministro</string>
+    <string name="title_activity_check_payments">Consulta de Pagos</string>
+    <string name="title_activity_check_consumptions">Consulta de Consumos</string>
 </resources>
